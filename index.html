@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Jiya Magar- Portfolio</title>
     <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-image: url('image copy.png');
+            background-size:contain;
+            background-color: #f8e5cb; /* Light peach background */
             margin: 0;
             padding: 0;
             color: #333;
@@ -22,8 +24,8 @@
         }
 
         header {
-            background-color: #222;
-            color: #fff;
+            background-color: #dfa6be; /* Coral pink background for header */
+            color: #fff; /* White text */
             padding: 10px 0;
             text-align: center;
         }
@@ -31,6 +33,17 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            position: left;
+            animation: moveName 1s  infinite alternate;
+        }
+
+        @keyframes moveName {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
         }
 
         nav {
@@ -40,13 +53,15 @@
 
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: #000000; /* White navigation links */
             margin: 0 10px;
             font-size: 1.2rem;
         }
 
         .hero {
-            background-image: url('path_to_your_background_image.jpg');
+
+            
+           
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -54,21 +69,19 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            color: #fff;
+            color: #fff; /* White text for hero section */
         }
 
         .hero h2 {
             font-size: 3rem;
-            margin: 0;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            color: black;
         }
 
         .content {
             padding: 20px;
-            background-color: #fff;
+            background-color: #fff; /* White background for content sections */
             margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(10, 4, 4, 0.1);
         }
 
         .portfolio {
@@ -107,26 +120,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
+            background-image: url('');
+            background-color: rgba(31, 90, 82, 0.8); /* Orange background with transparency */
+            color: #0a0a0a; /* White text */
             transform: rotateY(180deg);
             backface-visibility: hidden;
-            transition: transform 0.5s ease;
+            transition: transform 3s ease;
         }
 
         .portfolio-item:hover .details {
             transform: rotateY(0deg);
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #222;
-            color: #fff;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+        
 
         @media (max-width: 768px) {
             .portfolio-item {
@@ -146,7 +152,8 @@
 
     <header>
         <div class="container">
-            <h1>Your Name</h1>
+            
+            <h1>Jiya Magar</h1>
             <nav>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
@@ -157,77 +164,38 @@
 
     <section class="hero">
         <div class="container">
-            <h2>Welcome to My Artistic Portfolio</h2>
+            <h2>Welcome to My Portfolio</h2>
         </div>
     </section>
 
     <section id="about" class="content">
         <div class="container">
             <h2>About Me</h2>
-            <p>Write a brief introduction about yourself and your artistic journey.</p>
+            <p>I'm an undergrad student at IIT Bombay.My passion for coding has helped me learn various emerging technologies.I'm excited to explore opportunities for collarborations and innovation.</p>
         </div>
     </section>
 
+   
     <section id="portfolio" class="content">
         <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio">
-                <!-- Portfolio Items with Moving Elements -->
-                <div class="portfolio-item">
-                    <img src="path_to_portfolio_image_1.jpg" alt="Portfolio Item 1">
-                    <div class="details">
-                        <h3>Project Title</h3>
-                        <p>Description of the project.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="path_to_portfolio_image_2.jpg" alt="Portfolio Item 2">
-                    <div class="details">
-                        <h3>Project Title</h3>
-                        <p>Description of the project.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="path_to_portfolio_image_3.jpg" alt="Portfolio Item 3">
-                    <div class="details">
-                        <h3>Project Title</h3>
-                        <p>Description of the project.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="path_to_portfolio_image_4.jpg" alt="Portfolio Item 4">
-                    <div class="details">
-                        <h3>Project Title</h3>
-                        <p>Description of the project.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="path_to_portfolio_image_5.jpg" alt="Portfolio Item 5">
-                    <div class="details">
-                        <h3>Project Title</h3>
-                        <p>Description of the project.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="path_to_portfolio_image_6.jpg" alt="Portfolio Item 6">
-                    <div class="details">
-                        <h3>Project Title</h3>
-                        <p>Description of the project.</p>
-                    </div>
-                </div>
-            </div>
+            <div>
+            
+            <img src ="sammy.png" width = "1000px" height ="1000px">
+           </div>
         </div>
     </section>
+    
 
     <section id="contact" class="content">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Add your contact information and a contact form here.</p>
+            <p>Email : jiya139266@gmail.com</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        
     </footer>
 
 </body>
